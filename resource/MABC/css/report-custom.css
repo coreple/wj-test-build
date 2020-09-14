@@ -1,0 +1,24 @@
+/* 퍼블 처리를 위해 팝업 관련 display: block 되어있는 css를 block으로 변경한다. 제어는 로직으로한다. */
+.dimmed {display:block;}
+.report-layer-pop {display:block;}
+
+.btn-submit, .btn-submit:hover, .btn-submit:focus {background:#f7901e; color:#fff; border:2px solid #f7901e; text-shadow:2px 2px #9b6e47;}
+.dimmed {display:block; position:fixed; top:0; left:0; right:0; height:100vh; background:rgba(0,0,0,0.5); z-index:3;}
+
+.report-single {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.report-main {
+  height: auto !important;
+}
+
+.report-layer-close {
+  top: 20px;
+  left: 20px
+}
