@@ -1,0 +1,56 @@
+
+/* 퍼블 처리를 위해 팝업 관련 display: block 되어있는 css를 block으로 변경한다. 제어는 로직으로한다. */
+.dimmed {display:block;}
+.layer-pop {display:block;}
+
+/* IE에서 input 박스에 x 버튼 표시되는거 제거 */
+input::-ms-clear {
+  display: none;
+}
+
+/* div 태그 안의 텍스트 선택하지 못하도록 처리 */
+div, h5, p, span {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#toast-popup { visibility: visible; transition: opacity 300ms; }
+
+.customBrownColor {background:#8b766e !important; color:#fff !important;}
+
+/* @media (max-width : 899px) {
+	#root {opacity: 1}
+	#modal-root {opacity: 1}
+	#spinner-root {opacity: 1}
+
+	@media only screen and (orientation:portrait){
+		#root {opacity: 0}
+		#modal-root {opacity: 0}
+		#spinner-root {opacity: 0}
+	}
+	@media only screen and (orientation:landscape){
+		#root {opacity: 1}
+		#modal-root {opacity: 1}
+		#spinner-root {opacity: 1}
+  }
+} */
+
+.nanumGothic {font-family: 'Nanum Gothic';}
+
+.report-font {font-family: "HD152", "HG152", "heumm",'Nanum Gothic'}
+.test-bg-orange-font { font-size: 30px !important; }
+
+.quit-btn-zIndex { z-index: 10;}
+
+.section_center {top:50%; transform:translateY(-50%); }
+
+.disable-touch { touch-action: none; }
+.fixed { position: fixed; }
+.non-event { pointer-events: none;}
+
+.close-clickarea { width: 70px; height: 70px; position: absolute; top: 0px }
